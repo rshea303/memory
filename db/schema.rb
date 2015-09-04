@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150904173023) do
+ActiveRecord::Schema.define(version: 20150904182645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,4 +23,14 @@ ActiveRecord::Schema.define(version: 20150904173023) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "facts", force: :cascade do |t|
+    t.string   "fact"
+    t.integer  "card_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "facts", ["card_id"], name: "index_facts_on_card_id", using: :btree
+
+  add_foreign_key "facts", "cards"
 end

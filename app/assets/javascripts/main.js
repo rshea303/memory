@@ -1,5 +1,6 @@
 $(document).ready(function(){
   var $firstCard;
+  var counter = 0
   $('.card').on('click', function(){
     $(this).find('span').show();
     $(this).addClass('block-click');
@@ -10,6 +11,7 @@ $(document).ready(function(){
       firstCardValue = $firstCard.find('img').attr('src');
       currentCardValue = $currentCard.find('img').attr('src');
       if(firstCardValue === currentCardValue){
+        counter++
         $firstCard = undefined;
         setTimeout(function(){
           $('#click-card').hide();

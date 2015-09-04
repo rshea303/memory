@@ -18,5 +18,18 @@ RSpec.describe Card, type: :model do
 
     expect(card).not_to be_valid
   end
+
+  it "has many facts" do 
+    card = Card.create(title: "tiger", url: "http://google.com")
+
+    card.facts << Fact.create(fact: "The tiger is a cat")
+    card.facts << Fact.create(fact: "The tiger is a fierce predator")
+    card.facts << Fact.create(fact: "The tiger is not a lion")
+
+    expect(card.facts.size).to eq(3)
+    expect(card.facts[0].fact).to eq("The tiger is a cat")
+    expect(card.facts[1].fact).to eq("The tiger is a fierce predator")
+    expect(card.facts[2].fact).to eq("The tiger is not a lion")
+  end
 end
 
