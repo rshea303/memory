@@ -7,7 +7,7 @@ body {
 }
 
 .card {
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
   height: 100px;
   width: 100px;
@@ -20,6 +20,7 @@ body {
 }
 
 .card img {
+  border: 1px solid black;
   border-radius: 10px;
   width: 100px;
   height: 100px;
@@ -31,11 +32,6 @@ span {
 
 #main-header {
   text-align: center;
-}
-
-.main-section {
-  width: 600px;
-  margin: auto;
 }
 
 #match {
@@ -53,10 +49,10 @@ span {
 }
 
 .animal-facts {
-  margin: 34px 0 0 15px; 
+  margin: 15px 0 0 15px; 
   display: none;
   border: 1px solid black;
-  height: 498px;
+  height: 488px;
   width: 285px;
   background-color: blue;
 }
@@ -65,3 +61,7 @@ span {
   pointer-events: none;
 }
 
+.game-board {
+  width: 520px;
+  margin: auto; 
+}
