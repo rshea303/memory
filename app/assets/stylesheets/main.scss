@@ -1,0 +1,67 @@
+body {
+  background-color: gray;
+  background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRjBO1OO_zlfWbx0uc8FNlwaOQuJ1GVTjqDFDooVBf2jBLOu5D');
+  background-attachment: fixed;
+  background-position: 50% 50%; 
+  background-size: cover;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 15px;
+  color: white;
+  float: left;
+  box-shadow: 5px 5px 3px 1px #999;
+  background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPeF4uVby2cnjjc7Wa6uGTY7sZaxY-wVD9IwP4uuK42_8TE9ff');
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+span {
+  display: none;
+}
+
+#main-header {
+  text-align: center;
+}
+
+.main-section {
+  width: 600px;
+  margin: auto;
+}
+
+#match {
+  display: none;
+  text-align: center;
+}
+
+#try-again {
+  display: none;
+  text-align: center;
+}
+
+#click-card {
+  text-align: center;
+}
+
+.animal-facts {
+  margin: 34px 0 0 15px; 
+  display: none;
+  border: 1px solid black;
+  height: 498px;
+  width: 285px;
+  background-color: blue;
+}
+
+.block-click {
+  pointer-events: none;
+}
+
