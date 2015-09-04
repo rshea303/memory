@@ -6,4 +6,5 @@ describe "Home page" do
 
     expect(page).to have_text("Mammals")
   end
+
 end
