@@ -1,0 +1,5 @@
+<% @animals.each do |card| %> 
+  <div class="animal-facts <%= card.title %> big-card">
+    <img src="<%= card.url %>" />
+  </div>
+<% end %>
