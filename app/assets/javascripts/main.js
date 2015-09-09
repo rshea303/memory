@@ -17,19 +17,10 @@ $(document).ready(function(){
           $('#click-card').hide();
           $('#match').show();
           var tracker = $currentCard.data("title");
-
-          /*
-          $.ajax('cards/', {
-            data: 
-            success: function(response){
-              $('.animal-facts').html(response).slideDown();
-            }
-          });
-          */
-
           $('.animal-facts').fadeOut({duration: 1000});
-          $('.animal-facts').fadeIn({duration: 1000});
+          $('.' + tracker + '').fadeIn({duration: 1000});
         }, 200);
+
         setTimeout(function(){
           $('#click-card').show();
           $('#match').hide();
