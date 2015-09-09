@@ -1,5 +1,7 @@
 <% @animals.each do |card| %> 
   <div class="animal-facts <%= card.title %>">
+    <h3 style="color: white; text-align: center;">Did you know?</h3><br>
+    <h4 style="color: white; text-align: center;">The <%= card.title.capitalize %>...</h4>
     <ul style="color: white; list-style: none; padding: 20px;">
       <% card.facts.each do |fact| %>
         <li><%= fact.fact %></li>

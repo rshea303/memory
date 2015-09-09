@@ -17,8 +17,8 @@ $(document).ready(function(){
           $('#click-card').hide();
           $('#match').show();
           var tracker = $currentCard.data("title");
-          $('.animal-facts').fadeOut({duration: 1000});
-          $('.' + tracker + '').fadeIn({duration: 1000});
+          $('.animal-facts').hide();
+          $('.' + tracker + '').fadeIn({duration: 1500});
         }, 200);
 
         setTimeout(function(){
