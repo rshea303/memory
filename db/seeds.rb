@@ -1,11 +1,17 @@
 def generate_cards
   puts "...generating cards..."
   
-  Card.create(title: "tiger",
+  tiger = Card.create(title: "tiger",
               url: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942')
+  tiger.facts << Fact.create(fact: "tiger fact 1")
+  tiger.facts << Fact.create(fact: "tiger fact 2")
+  tiger.facts << Fact.create(fact: "tiger fact 3")
   
-  Card.create(title: "lion",
+  lion = Card.create(title: "lion",
               url: 'http://globe-views.com/dcim/dreams/lion/lion-05.jpg')
+  lion.facts << Fact.create(fact: "lion fact 1")
+  lion.facts << Fact.create(fact: "lion fact 2")
+  lion.facts << Fact.create(fact: "lion fact 3")
 
   Card.create(title: "elephant",
               url: 'http://media1.santabanta.com/full1/Animals/Elephants/elephants-9a.jpg')

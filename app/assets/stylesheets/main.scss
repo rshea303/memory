@@ -30,10 +30,6 @@ span {
   display: none;
 }
 
-#main-header {
-  text-align: center;
-}
-
 #match {
   display: none;
   text-align: center;
@@ -55,6 +51,7 @@ span {
   height: 488px;
   width: 285px;
   background-color: blue;
+  border-radius: 10px;
 }
 
 .block-click {
@@ -62,6 +59,16 @@ span {
 }
 
 .game-board {
-  width: 520px;
+  width: 100%;
   margin: auto; 
+}
+
+/* header */
+
+#main-header {
+  text-align: center;
+}
+
+#start-over {
+  text-align: center;
 }
