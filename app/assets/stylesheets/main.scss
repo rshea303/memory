@@ -8,8 +8,8 @@ body {
 
 .card {
   border: 1px solid black;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   background-color: blue;
   margin: 15px;
   color: white;
@@ -20,15 +20,16 @@ body {
 
 .card img {
   border: 1px solid black;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .big-card img {
   border: 1px solid black;
-  height: 488px;
-  width: 285px;
+  height: 410px;
+  width: 100%;
   margin: 0 15px 0 0;
+  padding-left: 0px;
 }
 
 span {
@@ -53,8 +54,8 @@ span {
   margin: 15px 0 0 15px; 
   display: none;
   border: 1px solid black;
-  height: 488px;
-  width: 285px;
+  height: 410px;
+  width: 100%;
   background-color: blue;
 }
 
@@ -63,8 +64,17 @@ span {
 }
 
 .game-board {
+  margin-left: 0px;
+  margin-right: 0px;
   width: 100%;
   margin: auto; 
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.col-xs-6 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* header */
