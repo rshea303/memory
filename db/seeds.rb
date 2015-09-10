@@ -19,11 +19,11 @@ def generate_cards
   elephant.facts << Fact.create(fact: "elephant fact 2")
   elephant.facts << Fact.create(fact: "elephant fact 3")
  
-  penguin = Card.create(title: "penguin",
-              url: 'http://upload.wikimedia.org/wikipedia/commons/0/07/Emperor_Penguin_Manchot_empereur.jpg')
-  penguin.facts << Fact.create(fact: "penguin fact 1")
-  penguin.facts << Fact.create(fact: "penguin fact 2")
-  penguin.facts << Fact.create(fact: "penguin fact 3")
+  zebra = Card.create(title: "zebra",
+              url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3ojFX-iLfLRKIanU7FC5jEqVI_x3_LQJH2kpPoUVWh1EvH6pVPw')
+  zebra.facts << Fact.create(fact: "zebra fact 1")
+  zebra.facts << Fact.create(fact: "zebra fact 2")
+  zebra.facts << Fact.create(fact: "zebra fact 3")
 
   gorilla = Card.create(title: "gorilla",
               url: 'http://assets.nydailynews.com/polopoly_fs/1.1466956!/img/httpImage/image.jpg_gen/derivatives/article_970/dallas-anti-social-ape.jpg')
@@ -37,11 +37,11 @@ def generate_cards
   orangutan.facts << Fact.create(fact: "orangutan fact 2")
   orangutan.facts << Fact.create(fact: "orangutan fact 3")
  
-  antelope = Card.create(title: "antelope",
-              url: 'http://passnownow.com/wp-content/uploads/2015/07/Animal8.jpg')
-  antelope.facts << Fact.create(fact: "antelope fact 1")
-  antelope.facts << Fact.create(fact: "antelope fact 2")
-  antelope.facts << Fact.create(fact: "antelope fact 3")
+  giraffe = Card.create(title: "giraffe",
+              url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT0PyPrE-p-SMrNzSg_EKPzvy981hcxo-tCvqOPH3n0UzF9-46')
+  giraffe.facts << Fact.create(fact: "giraffe fact 1")
+  giraffe.facts << Fact.create(fact: "antelope fact 2")
+  giraffe.facts << Fact.create(fact: "antelope fact 3")
 
   hippo = Card.create(title: "hippo",
               url: 'http://s.hswstatic.com/gif/hippo-sunscreen-1.jpg')
