@@ -1,5 +1,8 @@
 <% @animals.each do |card| %> 
   <div class="animal-facts <%= card.title %> big-card">
+    <div class="row animal-image-card">
+      <h3 style="text-align: center; margin-top: 15%;"><%= card.title.capitalize %></h4>
+    </div>
     <img src="<%= card.url %>" />
   </div>
 <% end %>

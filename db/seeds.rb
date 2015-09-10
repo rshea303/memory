@@ -14,7 +14,7 @@ def generate_cards
   lion.facts << Fact.create(fact: "The heaviest lion on record weighed an amazing 826lbs!")
 
   elephant = Card.create(title: "elephant",
-              url: 'http://media1.santabanta.com/full1/Animals/Elephants/elephants-9a.jpg')
+              url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGFaOgYlvzCklqqHNT4P5-zcOPuRF6wB8g_-LZ_44T0gaJZel')
   elephant.facts << Fact.create(fact: "Elephants can swim.  They use their trunk like a snorkel to breathe in deep water.")
   elephant.facts << Fact.create(fact: "Elephants are the largest land-living mammal in the world.")
   elephant.facts << Fact.create(fact: "Female elephants are called cows.")
