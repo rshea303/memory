@@ -1,6 +1,12 @@
 $(document).ready(function(){
   var $firstCard;
+  var counter = 0;
   $('.card').on('click', function(){
+    if (counter === 1) {
+      $('.game-board').addClass('block-click');
+    } else {
+      counter++;
+    }
     $(this).find('span').show();
     $(this).addClass('block-click');
     var $currentCard = $(this).find('span');
@@ -19,6 +25,10 @@ $(document).ready(function(){
           $('.animal-facts').hide();
           $('.' + tracker + '').fadeIn({duration: 1500});
         }, 200);
+          
+        setTimeout(function(){
+          $('.game-board').removeClass('block-click');
+        }, 1200);
 
         noMatch();
 
@@ -27,6 +37,7 @@ $(document).ready(function(){
         tryAgain();
 
         setTimeout(function(){
+          $('.game-board').removeClass('block-click');
           $firstCard.closest('.card').removeClass('block-click');
           $currentCard.closest('.card').removeClass('block-click');
           $firstCard.hide();
@@ -37,6 +48,7 @@ $(document).ready(function(){
     } 
 
     function noMatch() {
+      counter = 0;
       setTimeout(function(){
         $('#click-card').show();
         $('#match').hide();
@@ -44,6 +56,7 @@ $(document).ready(function(){
     }
 
     function tryAgain() {
+      counter = 0;
       setTimeout(function(){
         $('#click-card').hide();
         $('#try-again').show();
