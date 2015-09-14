@@ -1,6 +1,10 @@
 class GamesController < ApplicationController
   def index
-    @cards = (Card.all * 2).shuffle
-    @animals = Card.all
+    @games = Game.all
+  end
+
+  def show
+    @game = Game.find(params[:id])
+    @cards = (@game.cards * 2).shuffle
   end
 end

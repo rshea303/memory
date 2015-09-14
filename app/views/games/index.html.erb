@@ -3,37 +3,10 @@
   <head>
   </head>
   <body>
-
-    <div class="row">
-      <div class="col-xs-4"></div>
-      <div class="col-xs-4">
-        <h1 id="main-header">Mammals</h1>
-      </div>
-      <div class="col-xs-4">
-        <h1 id="start-over"><%= link_to "Start Over", root_path, class: "btn btn-success btn-sm" %></h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <h3 id="click-card">Click on a card!</h3>
-      <h3 id="match">Match!</h3>
-      <h3 id="try-again">Try Again!</h3>
-    </div>
-
-    <div class="row">
-
-      <div class="col-xs-3"> 
-        <%= render 'shared/animal_facts' %>
-      </div>
-
-      <div class="col-xs-6">
-        <%= render 'shared/gameboard' %>
-      </div>
-
-      <div class="col-xs-3">
-        <%= render 'shared/animal_pics' %>
-      </div>
-    </div>
-
+      <ul>
+        <% @games.each do |game| %>
+          <li><%= link_to game.name, game_path(game) %></li>
+        <% end %>
+      </ul>
   </body>
 </html>
