@@ -6,20 +6,20 @@
 
     <div class="row">
       <div class="col-xs-4">
-        <h1><%= link_to "See All Games", root_path, class: "btn btn-success btn-sm" %></h1>
+        <h1 id="see-all-games"><%= link_to "See All Games", root_path, class: "btn btn-success btn-sm" %></h1>
       </div>
       <div class="col-xs-4">
-        <h1 id="main-header"><%= @game.name %></h1>
+        <h3 id="main-header"><%= @game.name %></h3>
       </div>
       <div class="col-xs-4">
-        <h1 id="start-over"><%= link_to "Start Over", root_path, class: "btn btn-success btn-sm" %></h1>
+        <h1 id="start-over"><%= link_to "Start Over", game_path(@game), class: "btn btn-success btn-sm" %></h1>
       </div>
     </div>
 
     <div class="row">
-      <h3 id="click-card">Click on a card!</h3>
-      <h3 id="match">Match!</h3>
-      <h3 id="try-again">Try Again!</h3>
+      <h4 id="click-card">Click on a card!</h4>
+      <h4 id="match">Match!</h4>
+      <h4 id="try-again">Try Again!</h4>
     </div>
 
     <div class="row">
