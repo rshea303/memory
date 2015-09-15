@@ -1,6 +1,6 @@
 def generate_cards
   
-  game1 = Game.create(name: "Asian Mammals")
+  game1 = Game.create(name: "Asia")
   puts "generating #{game1.name} cards"
 
   tiger = Card.create(title: "tiger",
@@ -53,7 +53,7 @@ def generate_cards
 
   game1.cards.push(tiger, lion, elephant, zebra, gorilla, orangutan, giraffe, hippo)
 
-  game2 = Game.create(name: "South American Mammals")
+  game2 = Game.create(name: "South America")
 
   puts "generating #{game2.name} cards"
   sloth = Card.create(title: "sloth",
@@ -115,6 +115,12 @@ def generate_cards
   game2.cards.push(sloth, anteater, capybara, tapir, llama, alpaca, marmoset, otter)
 
   puts "...cards completed..."
+
+  game3 = Game.create(name: "Africa")
+  game4 = Game.create(name: "North America")
+  game5 = Game.create(name: "Europe")
+  game6 = Game.create(name: "Australia")
+  game7 = Game.create(name: "Antarctica")
 end
 
 generate_cards
