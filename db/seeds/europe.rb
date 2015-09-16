@@ -17,7 +17,7 @@ def generate_europe_animals
   lynx.facts << Fact.create(fact: "")
   puts "#{lynx.title}"
 
-  wild_boar = Card.create(title: "wild_boar",
+  wild_boar = Card.create(title: "wild boar",
               url: 'http://strangeanimalsoftheworld.weebly.com/uploads/1/2/7/6/12766325/806150574.jpg')
   wild_boar.facts << Fact.create(fact: "")
   wild_boar.facts << Fact.create(fact: "")
