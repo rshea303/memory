@@ -23,7 +23,7 @@ $(document).ready(function(){
           $('#try-again').hide();
           var tracker = $currentCard.data("title");
           $('.animal-facts').hide();
-          $('.' + tracker + '').fadeIn({duration: 1500});
+          $('.' + tracker.split(' ').join('-') + '').fadeIn({duration: 1500});
         }, 200);
           
         setTimeout(function(){

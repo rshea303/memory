@@ -1,5 +1,5 @@
 <% @game.cards.each do |card| %> 
-  <div class="animal-facts <%= card.title %>">
+  <div class="animal-facts <%= card.title.split(' ').join('-') %>">
     <h3 id="animal-facts-header">Did you know?</h3><br>
     <h4 id="animal-facts-header">The <%= card.title.capitalize %>...</h4>
     <ul class="animal-facts-info">
