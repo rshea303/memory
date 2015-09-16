@@ -4,14 +4,14 @@ def generate_africa_animals
 
   rhino = Card.create(title: "rhino",
               url: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvabjMkA2chC2qPu7kXE4YA9FCGq-KxXINIQO3yJhlgpFEaFK0')
-  rhino.facts << Fact.create(fact: "")
+  rhino.facts << Fact.create(fact: "The name rhinoceros means ‘nose horn’ and is often shortened to rhino.")
   rhino.facts << Fact.create(fact: "")
   rhino.facts << Fact.create(fact: "")
   puts "#{rhino.title}"
   
   cheetah = Card.create(title: "cheetah",
               url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpx9qK7K4X2LsJCKBVkeciSEqOzDrTkm0KURTDWQJS6UGlSOITOg')
-  cheetah.facts << Fact.create(fact: "")
+  cheetah.facts << Fact.create(fact: "Cheetahs can reach speeds of 60 miles per hour over short distances.")
   cheetah.facts << Fact.create(fact: "")
   cheetah.facts << Fact.create(fact: "")
   puts "#{cheetah.title}"
@@ -32,7 +32,7 @@ def generate_africa_animals
 
   crocodile = Card.create(title: "crocodile",
               url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3KL5Z7ro2OBHnyzWVwvYGnCKHCLzLR0XgAQ8XsvDT9XI0xbiA9Q')
-  crocodile.facts << Fact.create(fact: "")
+  crocodile.facts << Fact.create(fact: "Crocodiles have the strongest bite of any animal in the world.")
   crocodile.facts << Fact.create(fact: "")
   crocodile.facts << Fact.create(fact: "")
   puts "#{crocodile.title}"
