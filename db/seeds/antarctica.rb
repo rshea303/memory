@@ -58,7 +58,7 @@ def generate_antarctica_animals
   snow_petrel.facts << Fact.create(fact: "")
   puts "#{snow_petrel.title}"
 
-  antarctica.cards.push(penguin, leopard_seal, killer_whale, albatross, sperm_whale, humpback_whale, elephant_seal, mountain_lion)
+  antarctica.cards.push(penguin, leopard_seal, killer_whale, albatross, sperm_whale, humpback_whale, elephant_seal, snow_petrel)
   puts "----------"
 end
 

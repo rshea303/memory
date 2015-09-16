@@ -51,12 +51,12 @@ def generate_north_america_animals
   alligator.facts << Fact.create(fact: "")
   puts "#{alligator.title}"
 
-  mountain_chipmunk = Card.create(title: "mountain lion",
+  mountain_lion = Card.create(title: "mountain lion",
               url: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW9rRYcqiITNU6s_b-M33rzewWnvMRNqRd57aU7Zg4WR4-7aaL')
-  mountain_chipmunk.facts << Fact.create(fact: "")
-  mountain_chipmunk.facts << Fact.create(fact: "")
-  mountain_chipmunk.facts << Fact.create(fact: "")
-  puts "#{mountain_chipmunk.title}"
+  mountain_lion.facts << Fact.create(fact: "")
+  mountain_lion.facts << Fact.create(fact: "")
+  mountain_lion.facts << Fact.create(fact: "")
+  puts "#{mountain_lion.title}"
 
   north_america.cards.push(wolverine, chipmunk, beaver, elk, bald_eagle, grizzly_bear, alligator, mountain_lion)
   puts "----------"
