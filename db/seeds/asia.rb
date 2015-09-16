@@ -10,7 +10,7 @@ def generate_asia_animals
   puts "#{tiger.title}"
   
   panda_bear = Card.create(title: "panda bear",
-              url: '')
+              url: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwf0TMCSeoucMvrgQ82gS4hZtYuugRMV1itU0BXtIFlAs8XybP')
   panda_bear.facts << Fact.create(fact: "")
   panda_bear.facts << Fact.create(fact: "")
   panda_bear.facts << Fact.create(fact: "")

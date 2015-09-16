@@ -58,7 +58,7 @@ def generate_africa_animals
   lion.facts << Fact.create(fact: "The heaviest lion on record weighed an amazing 826lbs!")
   puts "#{lion.title}"
 
-  africa.cards.push(rhino, cheetah, beaver, elk, crocodile, grizzly_bear, alligator, lion)
+  africa.cards.push(rhino, cheetah, gorilla, hippo, crocodile, giraffe, zebra, lion)
   puts "----------"
 end
 
